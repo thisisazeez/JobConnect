@@ -143,10 +143,9 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 CORS_ORIGIN_ALLOW_ALL = True
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:9090',
-    'https://bigporjobs-production.up.railway.app'
+    'https://bigporjobs-production.up.railway.app',
 ],
-CORS_ORIGIN_WHITELIST = [ 'https://bigporjobs-production.up.railway.app' ]
+# CORS_ORIGIN_WHITELIST = [ 'https://bigporjobs-production.up.railway.app' ]
 CORS_ALLOW_METHODS = ("DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT")
 
 CORS_ALLOW_HEADERS = (

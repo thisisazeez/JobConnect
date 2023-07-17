@@ -141,10 +141,8 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # ALLOWED_HOSTS = ['django-portal.herokuapp.com', 'localhost', 'jobs.manjurulhoque.com', '127.0.0.1', 'localhost:3000']
 # cors config
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = [
-    'https://bigporjobs-production.up.railway.app',
-],
+ALLOWED_HOSTS = ["https://bigporjobs-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ['https://bigporjobs-production.up.railway.app'],
 # CORS_ORIGIN_WHITELIST = [ 'https://bigporjobs-production.up.railway.app' ]
 CORS_ALLOW_METHODS = ("DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT")
 

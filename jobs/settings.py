@@ -143,7 +143,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 CORS_ORIGIN_ALLOW_ALL = True
 ALLOWED_HOSTS = ["https://bigporjobs-production.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = ['https://bigporjobs-production.up.railway.app']
-# CORS_ORIGIN_WHITELIST = [ 'https://bigporjobs-production.up.railway.app' ]
+CORS_ORIGIN_WHITELIST = [ 'https://bigporjobs-production.up.railway.app' ]
 CORS_ALLOW_METHODS = ("DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT")
 
 CORS_ALLOW_HEADERS = (
@@ -159,7 +159,7 @@ CORS_ALLOW_HEADERS = (
 )
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "static")  # for production
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")  # for production
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
